@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Tracker  |  LifeCare Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="health-tracker">
+    <h1>Track Your Health</h1>
+
+    <div class="tracker-cards">
+      <div class="card">
+        <h2 id="steps">0</h2>
+        <p>Steps Today</p>
+      </div>
+
+      <div class="card">
+        <h2 id="heartRate">--</h2>
+        <p>Heart Rate (BPM)</p>
+      </div>
+
+      <div class="card">
+        <h2 id="bmi">--</h2>
+        <p>BMI</p>
+      </div>
+    </div>
+
+    <!--input-->
+
+    <div class="tracker-form">
+      <input type="number" id="weight" placeholder="Weight(kg)">
+      <input type="number" id="height" placeholder="Height(cm)">
+      <input type="text" id="bp" placeholder="Blood Pressure (120/80)">
+      <button id="updateMetrics">Update Metrics</button>
+    </div>
+
+    <div class="tracker-graph">
+      <canvas id="stepsChart"></canvas>
+      <canvas id="heartChart"></canvas>
+    </div>
+  </section>
+  <script src="tracker.js"></script>
+</body>
+</html>

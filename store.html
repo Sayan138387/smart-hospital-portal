@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Store  |  LifeCare Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>Medicine Store  |  LifeCare Hospital</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="appointment.html">Book Appointment</a></li>
+        <li><a href="ambulance.html">Ambulance</a></li>
+        <li><a href="store.html">Medicine Store</a></li>
+        <li><a href="tracker.html">Health Tracker</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+      </ul>
+      <span id="cartCount">0</span>    <!--add cart emoji here-->
+      <a href="cart.html" id="cartCount">🛒</a>
+    </nav>
+  </header>
+
+  <section class="medicine-section">
+    <h1>Online Medicine Store</h1>
+
+    <div class="medicine-grid">
+
+      <div class="medicine-card">
+        <h3>Paracetamol</h3>
+        <p>30/-</p>
+        <p>Delivery: 20 mins</p>
+        <button class="add-cart" data-name="Paracetamol" data-price="20">Add to Cart</button>
+      </div>
+
+      <div class="medicine-card">
+        <h3>Cough Syrup</h3>
+        <p>90/-</p>
+        <p>Delivery: 30 mins</p>
+        <button class="add-cart" data-name="Cough Syrup" data-price="90">Add to Cart</button>
+      </div>
+
+      <div class="medicine-card">
+        <h3>Antacid</h3>
+        <p>70/-</p>
+        <p>Delivery: 20 mins</p>
+        <button class="add-cart" data-name="Antacid" data-price="70">Add to Cart</button>
+      </div>
+
+      <div class="medicine-card">
+        <h3>Vitamin C</h3>
+        <p>25/-</p>
+        <p>Delivery: 15 mins</p>
+        <button class="add-cart" data-name="Vitamin C" data-price="25">Add to Cart</button>
+      </div>
+
+      <div class="medicine-card">
+        <h3>Amoxicillin</h3>
+        <p>150/-</p>
+        <p>Delivery: 20 mins</p>
+        <button class="add-cart" data-name="Amoxicillin" data-price="150">Add to Cart</button>
+      </div>
+
+      <div class="medicine-card">
+        <h3>ORS</h3>
+        <p>10/-</p>
+        <p>Delivery: 20 mins</p>
+        <button class="add-cart" data-name="ORS" data-price="10">Add to Cart</button>
+      </div>
+
+
+    </div>
+  </section>
+  <script src="store.js"></script>
+</body>
+</html>

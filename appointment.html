@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - LifeCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LifeCare Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="ambulance.html">Ambulance</a></li>
+                <li><a href="store.html">Medicine Store</a></li>
+                <li><a href="tracker.html">Health Tracker</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="darkModeToggle">Dark</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form-section">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="number" id="age" placeholder="Age" required min="0"/>
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+            <input type="email" id="email" placeholder="Email Address" required />
+            <select id="doctor" required>
+                <option value="">Select Doctor</option>
+                <option value="Dr. Aryan Roy">Dr. Aryan Roy - Cardiologist</option>
+                <option value="Dr. Nisha Patel">Dr. Nisha Patel - Neurologist</option>
+                <option value="Dr. Farhan Khan">Dr. Farhan Khan - Orthopedic</option>
+                <option value="Dr. Meera Sen">Dr. Meera Sen - Pediatrician</option>
+                <option value="Dr. Vikram Batra">Dr. Vikram Batra - Dermatologist</option>
+                <option value="Dr. Aisha Jain">Dr. Aisha Jain - Gynecologist</option>
+                <option value="Dr. Rohan Mehta">Dr. Rohan Mehta - ENT Specialist</option>
+                <option value="Dr. Kavita Bose">Dr. Kavita Bose - Psychiatrist</option>
+                <option value="Dr. Anil Kapoor">Dr. Anil Kapoor - General Surgeon</option>
+                <option value="Dr. Sunita Rao">Dr. Sunita Rao - Oncologist</option>
+                <option value="Dr. Arjun Bhatt">Dr. Arjun Bhatt - Urologist</option>
+                <option value="Dr. Preeti Singh">Dr. Preeti Singh - Dentist</option>
+                <option value="Dr. Rahul Desai">Dr. Rahul Desai - Ophthalmologist</option>
+
+            </select>
+            <input type="date" id="date" required />
+            <input type="time" id="time" required />
+            <textarea id="symptoms" placeholder="Describe Your Symptoms..." required></textarea>
+            <button type="submit" class="btn">Confirm Appointment</button>
+        </form>
+    </section>
+    <button id="sosBtn">SOS</button>
+    <script src="main.js"></script>
+    <script src="appointment.js"></script>
+</body>
+</html>

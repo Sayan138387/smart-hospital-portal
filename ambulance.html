@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Hospital - LifeCare</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>LifeCare Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="ambulance.html">Ambulance</a></li>
+                <li><a href="store.html">Medicine Store</a></li>
+                <li><a href="tracker.html">Health Tracker</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="darkModeToggle">Dark</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form-section">
+        <h2>Book an Ambulance</h2>
+        <form id="ambulanceForm">
+            <input type="text" id="name" placeholder="Full Name" required/>
+            <input type="tel" id="phone" placeholder="Phone Number" required/>
+            <input type="text" id="address" placeholder="Pickup Address" required/>
+            <select id="emergencyType" required>
+                <option value="">Emergency Type</option>
+                <option value="Accident">Accident</option>
+                <option value="Stroke">Stroke</option>
+                <option value="Heart Attack">Heart Attack</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="submit" class="btn">Confirm Ambulance</button>
+        </form>
+    </section>
+    <button id="sosBtn">SOS</button>
+    <script src="main.js"></script>
+    <script src="ambulance.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Our Doctors - LifeCare Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">LifeCare Hospital</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="appointment.html">Book Appointment</a></li>
+        <li><a href="ambulance.html">Ambulance</a></li>
+        <li><a href="store.html">Medicine Store</a></li>
+        <li><a href="tracker.html">Health Tracker</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="form-section">
+    <h1>Meet Our Specialist Doctors</h1>
+    <div class="doctor-controls">
+    <input
+    type="text"
+    id="doctorSearch"
+    placeholder="Search doctor by name..."
+    >
+
+    <select id="specialityFilter">
+      <option value="all">All Specializations</option>
+      <option value="cardiology">Cardiology</option>
+      <option value="neurology">Neurology</option>
+      <option value="orthopedic">Orthopedic</option>
+      <option value="dentist">Dentist</option>
+      <option value="dermatalogist">Dermatalogist</option>
+      <option value="urologist">Urologist</option>
+      <option value="ent">ENT Specialist</option>
+    </select>
+  
+    <div class="doctor-list">
+      <div class="doctor-card"
+      data-name="dr rajesh sharma" data-speciality="cardiology">
+        <h2>Dr. Rajesh Sharma</h2>
+        <p>Cardiologist</p>
+        <p><strong>Available:</strong> Mon - Fri | 10 AM - 3 PM</p>
+      </div>
+
+      <div class="doctor-card"
+      data-name="dr anjali verma" data-speciality="pediatrician">
+        <h2>Dr. Anjali Verma</h2>
+        <p>Pediatrician</p>
+        <p><strong>Available:</strong> Tue - Sat</p>
+      </div>
+
+      <div class="doctor-card"
+      data-name="dr kunal roy" data-speciality="neurologist">
+        <h2>Dr. Kunal Roy</h2>
+        <p>Neurologist</p>
+        <p><strong>Available:</strong> Mon - Thu</p>
+      </div>
+
+      <div class="doctor-card"
+      data-name="dr farhan khan" data-speciality="orthopedic">
+        <h2>Dr. Farhan Khan</h2>
+        <p>Orthopedic</p>
+        <p><strong>Available:</strong> Tue - Sun</p>
+      </div>
+
+      <div class="doctor-card"
+      data-name="dr sunita rao" data-speciality="dentist">
+        <h2>Dr. Sunita Rao</h2>
+        <p>Dentist</p>
+        <p><strong>Available:</strong> Tue - Sun</p>
+      </div>
+
+      <div class="doctor-card"
+      data-name="dr vikram batra" data-speciality="dermatalogist">
+        <h2>Dr. Vikram Batra</h2>
+        <p>Dermatalogist</p>
+        <p><strong>Available:</strong> Fri - Sun</p>
+      </div>
+
+      <div class="doctor-card"
+      data-name="dr rahul desai" data-speciality="urologist">
+        <h2>Dr. Rahul Desai</h2>
+        <p>Urologist</p>
+        <p><strong>Available:</strong> Tue - Thu</p>
+      </div>
+
+      <div class="doctor-card"
+      data-name="dr meera sen" data-speciality="ent">
+        <h2>Dr. Meera Sen</h2>
+        <p>ENT Specialist</p>
+        <p><strong>Available:</strong> Wed - Sun</p>
+      </div>
+    </div>
+    </div>
+  </section>
+   <script src="doctors.js" defer></script>
+</body>
+</html>

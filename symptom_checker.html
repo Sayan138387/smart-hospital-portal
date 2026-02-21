@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Symptom Checker</title>
+  <link rel="stylesheet" href="symptom.css">
+</head>
+<body>
+  <header>AI Symptom Checker</header>
+
+  <div class="container">
+    <p class="disclaimer">
+      This tool is for informational purposes only.Consult a doctor.
+    </p>
+
+    <div class="chat-box" id="chatBox">
+      <div class="bot-msg">Hello, Please tell me your symptoms.</div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="e.g. fever, cough">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="symptom.js"></script>
+</body>
+</html>
