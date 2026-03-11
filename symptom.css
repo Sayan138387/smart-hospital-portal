@@ -20,3 +20,61 @@ header {
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
+.chat-box {
+  height: 350px;
+  overflow-y: auto;
+  background: #f4f4f4;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.bot-msg {
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 75%;
+}
+
+.user-msg {
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 75%;
+  background: #c8e6c9;
+  margin-left: auto;
+}
+
+
+.bot-msg {
+  background: #bbdefb;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #1bfe20;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 18px;
+
+}
+
+.disclaimer {
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
